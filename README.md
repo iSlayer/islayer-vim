@@ -216,9 +216,24 @@ Airline provides a lightweight themable statusline with no external dependencies
 It also contains a very complete set of [snippets](https://github.com/spf13/snipmate-snippets) for use with snipmate or [neocomplete].
 
 ## [PythonComplete]
+
+TODO: Fill in
+
 ## [AutoClose]
+
+TODO: Fill in
+
 ## [IndentGuides]
-## [Markdown & Preview]
+
+TODO: Fill in
+
+## [Markdown]
+
+TODO: Fill in
+
+## [Preview]
+
+TODO: Fill in
 
 # Intro to VIM
 
@@ -261,6 +276,11 @@ Here's some tips if you've never used VIM before:
 [Tabularize]:https://github.com/godlygeek/tabular
 [Airline]:https://github.com/bling/vim-airline
 [Ack.vim]:https://github.com/mileszs/ack.vim
+[PythonComplete]:https://github.com/vim-scripts/pythoncomplete
+[AutoClose]:https://github.com/spf13/vim-autoclose
+[IndentGuides]:https://github.com/nathanaelkane/vim-indent-guides
+[Markdown]:https://github.com/tpope/vim-markdown
+[Preview]:https://github.com/spf13/vim-preview
 
 [islayer-vim-img]:https://
 [islayer-vimrc-img]:https://
