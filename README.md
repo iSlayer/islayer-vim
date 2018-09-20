@@ -215,6 +215,10 @@ Airline provides a lightweight themable statusline with no external dependencies
 
 It also contains a very complete set of [snippets](https://github.com/spf13/snipmate-snippets) for use with snipmate or [neocomplete].
 
+## [PythonComplete]
+## [AutoClose]
+## [IndentGuides]
+## [Markdown & Preview]
 
 # Intro to VIM
 
