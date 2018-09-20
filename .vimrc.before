@@ -1,0 +1,26 @@
+" Modeline and Notes {
+" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker:
+"
+"                _
+"        __   __(_)_ __ ___
+"        \ \ / /| | '_ ` _ \
+"         \ V / | | | | | | |
+"          \_/  |_|_| |_| |_|
+"        
+"
+"   This is the personal .vimrc.before file of David Lester.
+"   While much of it is beneficial for general use, I would
+"   recommend picking out the parts you want and understand.
+"
+"   This file is for options which must be set *before* plugins
+"   are loaded and the main .vimrc config is run. Most of these
+"   are for preventing mappings or commands from being created.
+"
+"   You can find me at http://github.com/islayer
+" }
+
+" Use local before if available {
+    if filereadable(expand("~/.vimrc.before.local"))
+        source ~/.vimrc.before.local
+    endif
+" }
