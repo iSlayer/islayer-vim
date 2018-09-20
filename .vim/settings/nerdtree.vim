@@ -50,5 +50,6 @@
         let NERDTreeMouseMode = 2
         " Show hidden files
         let NERDTreeShowHidden=1
+        let g:NERDTreeHighlightCursorline = 0
     endif
 " }

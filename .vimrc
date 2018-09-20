@@ -72,7 +72,7 @@
     endif
 " }
 
-" Use bundles config {
+" Use Bundles config {
     if filereadable(expand("~/.vimrc.bundles"))
         source ~/.vimrc.bundles
     endif
@@ -82,7 +82,7 @@
 
     set background=dark         " Assume a dark background
 
-    filetype plugin indent on   " Automatically detect file types
+    filetype plugin indent on   " Automatically detect file types.
     syntax on                   " Syntax highlighting
     set mouse=a                 " Automatically enable mouse usage
     set mousehide               " Hide the mouse cursor while typing
@@ -124,8 +124,8 @@
 " }
 
 " Vim UI {
-    
-    colorscheme default
+
+    colorscheme onedark " default
 
     set tabpagemax=15               " Only show 15 tabs
     set showmode                    " Display the current mode
@@ -153,7 +153,7 @@
         set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
     endif
 
-    set colorcolumn=80,100          " Set color column at 80 & 100
+    set colorcolumn=80,100          " Set color column at length 80 & 100
     set backspace=indent,eol,start  " Backspace for dummies
     set linespace=0                 " No extra spaces between rows
     set number                      " Line numbers on
@@ -211,7 +211,7 @@
 
 " Key (re)Mappings {
 
-    " The default leader is '\', but many people prefer ',' as it's in a standard
+    " The default leader is '\', many people prefer ',' as it's in a standard
     " location. To override this behavior and set it back to '\' (or any other
     " character) add the following to your .vimrc.before.local file:
     let mapleader = ','
@@ -288,7 +288,6 @@
         if &term == 'xterm' || &term == 'screen'
             set t_Co=256            " Enable 256 colors to stop the CSApprox warning and make xterm vim shine
         endif
-        "set term=builtin_ansi       " Make arrow and other keys work
     endif
 
 " }

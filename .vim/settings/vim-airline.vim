@@ -61,7 +61,7 @@
         endif
 
         " Theme {
-        let g:airline_theme = 'dark'
+        let g:airline_theme = 'onedark' " 'dark'
         " }
 
         " Tabline {
@@ -79,7 +79,7 @@
         let g:airline#extensions#tabline#right_sep = '◀'
 
         " Hides the fugitive //**// part of the buffer names to only file
-        " let g:airline#extensions#fugitiveline#enabled = 1
+        let g:airline#extensions#fugitiveline#enabled = 1
         
         " enable/disable displaying index of the buffer.
         " When enabled, numbers will be displayed in the tabline and mappings will be
