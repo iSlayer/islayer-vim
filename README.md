@@ -189,11 +189,11 @@ Tabularize lets you align statements on their equal signs and other characters
 
 ## [Tagbar]
 
-spf13-vim includes the Tagbar plugin. This plugin requires exuberant-ctags and will automatically generate tags for your open files. It also provides a panel to navigate easily via tags
+islayer-vim includes the Tagbar plugin. This plugin requires exuberant-ctags and will automatically generate tags for your open files. It also provides a panel to navigate easily via tags
 
 **QuickStart** `CTRL-]` while the cursor is on a keyword (such as a function name) to jump to its definition.
 
-**Customizations**: spf13-vim binds `<Leader>tt` to toggle the tagbar panel
+**Customizations**: islayer-vim binds `<Leader>tt` to toggle the tagbar panel
 
 ![tagbar image][tagbar-img]
 
@@ -207,11 +207,9 @@ one level).
 
 ## [Airline]
 
-Airline provides a lightweight themable statusline with no external dependencies. By default this configuration uses the symbols `‹` and `›` as separators for different statusline sections but can be configured to use the same symbols as [Powerline]. An example first without and then with powerline symbols is shown here:
+Airline provides a lightweight themable statusline with no external dependencies. By default this configuration uses the symbols `‹` and `›` as separators for different statusline sections.
 
 ![airline image][airline-img]
-
-To enable powerline symbols first install one of the [Powerline Fonts] or patch your favorite font using the provided instructions. Configure your terminal, MacVim, or Gvim to use the desired font. Finally add `let g:airline_powerline_fonts=1` to your `.vimrc.before.local`.
 
 ## Snippets
 
@@ -264,6 +262,6 @@ Here's some tips if you've never used VIM before:
 [islayer-vimrc-img]:https://
 [autocomplete-img]:https://i.imgur.com/90Gg7.png
 [tagbar-img]:https://i.imgur.com/cjbrC.png
-[fugitive-img]:https://i.imgur.com/4NrxV.png
+[fugitive-img]:https://
 [nerdtree-img]:https://i.imgur.com/9xIfu.png
 [airline-img]:https://i.imgur.com/D4ZYADr.png
