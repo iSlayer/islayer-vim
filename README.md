@@ -17,9 +17,19 @@ To make all the plugins work, specifically [neocomplete](https://github.com/Shou
 
 ## Linux Installation
 
-The easiest way to install islayer-vim is to fork or clone.
-
 *Requires Git 1.7+ and Vim 7.3+*
+
+The easiest way to install islayer-vim is to fork or clone. Run the following command:
+```bash
+    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+```
+
+Open a vim and run the command:
+```
+    :PluginInstall<CR>
+```
+
+All the plugins should be installed now!
 
 # A highly optimized .vimrc config file
 
