@@ -252,6 +252,7 @@ TODO: Fill in
 * Change airline icons
 * Add tagbar
 * Remove textobj-quote & sentence ?
+* Generate .sh script to create symbolic links for git local repo
 
 # Intro to VIM
 
