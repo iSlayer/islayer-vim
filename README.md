@@ -245,6 +245,14 @@ TODO: Fill in
 
 TODO: Fill in
 
+## TODO:
+
+* Remove tabular
+* Change devicons colors
+* Change airline icons
+* Add tagbar
+* Remove textobj-quote & sentence ?
+
 # Intro to VIM
 
 Here's some tips if you've never used VIM before:

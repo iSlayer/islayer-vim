@@ -160,9 +160,9 @@
         if count(g:bundle_groups, 'misc')
             Bundle 'tpope/vim-markdown'
             Bundle 'spf13/vim-preview'
-        Bundle 'ryanoasis/vim-devicons'
-        Bundle 'tiagofumo/vim-nerdtree-syntax-highlight'
-        Bundle 'joshdick/onedark.vim'
+            Bundle 'ryanoasis/vim-devicons'
+            Bundle 'tiagofumo/vim-nerdtree-syntax-highlight'
+            Bundle 'joshdick/onedark.vim'
         endif
     " }
 

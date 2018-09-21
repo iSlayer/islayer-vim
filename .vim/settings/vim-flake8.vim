@@ -7,7 +7,7 @@
 "         \ V / | | | | | | |
 "          \_/  |_|_| |_| |_|
 "
-"   This is the personal vim-markdown settings file of David Lester.
+"   This is the personal vim-flake8 settings file of David Lester.
 "   While much of it is beneficial for general use, I would
 "   recommend picking out the parts you want and understand.
 "
@@ -28,8 +28,9 @@
 "   limitations under the License.
 " }
 
-" vim-markdown {
-    if count(g:bundle_groups, 'misc')
-        let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'c', 'cpp']
+" vim-flake8 {
+    if count(g:bundle_groups, 'python')
+        " Flake8 instuction settings http://flake8.pycqa.org/en/latest/
+        let g:flake8_show_in_file= 0  " show
     endif 
 " }

@@ -67,16 +67,23 @@
         " Tabline {
         " Enable/disable tagbar integration
         let g:airline#extensions#tabline#enabled = 1
+
         " enable/disable displaying buffers with a single tab.
         let g:airline#extensions#tabline#show_buffers = 0
+
         " configure whether buffer numbers should be shown.
         let g:airline#extensions#tabline#buffer_nr_show = 1
-        let g:airline#extensions#tabline#formatter = 'default'
+
+        let g:airline#extensions#tabline#formatter = 'unique_tail'
+        let g:airline#extensions#tabline#show_tabs = 1
         " enable/disable displaying tab number in tabs mode.
         let g:airline#extensions#tabline#show_tab_nr = 0
         " Tagbar seperators
         let g:airline#extensions#tabline#left_sep = '▶'
         let g:airline#extensions#tabline#right_sep = '◀'
+
+        " configure whether close button should be shown
+        let g:airline#extensions#tabline#show_close_button = 0
 
         " Hides the fugitive //**// part of the buffer names to only file
         let g:airline#extensions#fugitiveline#enabled = 1
@@ -106,18 +113,18 @@
         " }
 
         " Branch {
-        " enable/disable fugitive/lawrencium integration
         let g:airline#extensions#branch#enabled = 1
+        " truncate long branch names to a fixed length
+        let g:airline#extensions#branch#displayed_head_limit = 10
         " change the text for when no branch is detected
         let g:airline#extensions#branch#empty_message = ''
         " to truncate all path sections but the last one, e.g. a branch
-        " 'foo/bar/baz' becomes 'f/b/baz', use
-        let g:airline#extensions#branch#format = 2
+        let g:airline#extensions#branch#format = 1
         " }
 
         " Bufferline {
         " enable/disable bufferline integration
-        let g:airline#extensions#bufferline#enabled = 1
+        let g:airline#extensions#bufferline#enabled = 0
         " }
 
     endif 

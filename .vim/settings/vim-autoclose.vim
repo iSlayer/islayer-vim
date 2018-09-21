@@ -7,7 +7,7 @@
 "         \ V / | | | | | | |
 "          \_/  |_|_| |_| |_|
 "
-"   This is the personal vim-markdown settings file of David Lester.
+"   This is the personal vim-autoclose settings file of David Lester.
 "   While much of it is beneficial for general use, I would
 "   recommend picking out the parts you want and understand.
 "
@@ -28,8 +28,8 @@
 "   limitations under the License.
 " }
 
-" vim-markdown {
-    if count(g:bundle_groups, 'misc')
-        let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'c', 'cpp']
+" vim-autoclose {
+    if count(g:bundle_groups, 'general')
+        let g:autoclose_vim_commentmode = 1
     endif 
 " }

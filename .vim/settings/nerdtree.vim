@@ -31,7 +31,7 @@
 " nerdtree {
     if isdirectory(expand("~/.vim/bundle/nerdtree"))
         " Disable warnings from NERDCommenter
-        let g:NERDShutUp=1
+        let g:NERDShutUp = 1
         map <C-e> <plug>NERDTreeTabsToggle<CR>
         map <leader>e :NERDTreeFind<CR>
         nmap <leader>nt :NERDTreeFind<CR>
@@ -39,17 +39,18 @@
         " Use natural sort 
         let NERDTreeNaturalSort = 1
         " Show bookmarks in window
-        let NERDTreeShowBookmarks=1
+        let NERDTreeShowBookmarks = 1
         " Ignore file types in NERDTree window
-        let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$']
+        let NERDTreeIgnore = ['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$']
         " NERDTree does not change the cwd
-        let NERDTreeChDirMode=0
+        let NERDTreeChDirMode = 0
         " Close NERDTree after opening a file
-        let NERDTreeQuitOnOpen=1
+        let NERDTreeQuitOnOpen = 1
         " Single click will open directory, double for file nodes
         let NERDTreeMouseMode = 2
         " Show hidden files
-        let NERDTreeShowHidden=1
-        let g:NERDTreeHighlightCursorline = 0
+        let NERDTreeShowHidden = 1
+        let NERDTreeHighlightCursorline = 0
+        let NERDTreeShowLineNumbers = 1
     endif
 " }

@@ -30,7 +30,7 @@
 
 " vim-indent_guides {
     if isdirectory(expand("~/.vim/bundle/vim-indent-guides/"))
-        let g:indent_guides_enable_on_vim_startup = 1
+        let g:indent_guides_enable_on_vim_startup = 0
         let g:indent_guides_auto_colors = 1
         " Default: 10 (10%). Values: between 0 and 100.
         let g:indent_guides_color_change_percent = 10
