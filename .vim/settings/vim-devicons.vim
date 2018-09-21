@@ -7,11 +7,9 @@
 "         \ V / | | | | | | |
 "          \_/  |_|_| |_| |_|
 "
-"   This is the personal vim-indent-guides settings file of David Lester.
+"   This is the personal vim-devicons settings file of David Lester.
 "   While much of it is beneficial for general use, I would
 "   recommend picking out the parts you want and understand.
-"
-"   You can find me at http://github.com/islayer
 "
 "   Copyright 2018 David Lester
 "
@@ -28,14 +26,15 @@
 "   limitations under the License.
 " }
 
-" vim-indent_guides {
-    if isdirectory(expand("~/.vim/bundle/vim-indent-guides/"))
-        let g:indent_guides_enable_on_vim_startup = 1
-        let g:indent_guides_auto_colors = 1
-        " Default: 10 (10%). Values: between 0 and 100.
-        let g:indent_guides_color_change_percent = 10
-        let g:indent_guides_space_guides = 1
-        let g:indent_guides_start_level = 2
-        let g:indent_guides_guide_size = 1
-    endif
+" vim-devicons {
+    if count(g:bundle_groups, 'misc')
+        set guifont=Droid\ Sans\ Mono\ Nerd\ Font\ Complete
+        let g:webdevicons_enable_airline_tabline = 1
+        let g:webdevicons_enable_airline_statusline = 1
+        let g:airline_powerline_fonts = 1
+
+        let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+        let g:DevIconsEnableFoldersOpenClose = 1
+        let g:DevIconsEnableFolderExtensionPatternMatching = 1
+    endif 
 " }
