@@ -25,7 +25,7 @@ The easiest way to install islayer-vim is to fork or clone. Run the following co
 ```
 
 Open a vim and run the command:
-```
+```vim script
     :PluginInstall<CR>
 ```
 

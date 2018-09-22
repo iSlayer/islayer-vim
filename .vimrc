@@ -406,8 +406,9 @@
     endif
 " }
 
-"" Source plugin settings {
-"    if filereadable(expand("~/.vim/settings.vim"))
-"        source ~/.vim/settings.vim
-"    endif
-"" }
+" Source plugin settings {
+    if filereadable(expand("~/.vim/settings.vim"))
+        source ~/.vim/settings.vim
+    endif
+" }
+
