@@ -1,5 +1,5 @@
 # islayer-vim : David Lester's Vim Distribution
-[![Build Status][build-badge]][build]
+[![Build Status](https://travis-ci.com/iSlayer/islayer-vim.svg?branch=master)](https://travis-ci.com/iSlayer/islayer-vim)
 
 islayer-vim is a distribution of vim plugins and resources for Vim and Gvim.
 
@@ -280,7 +280,6 @@ Here's some tips if you've never used VIM before:
   convenient location.
 * Keyboard [cheat sheet](http://www.viemu.com/vi-vim-cheat-sheet.gif).
 
-[build-badge]: https://travis-ci.com/iSlayer/islayer-vim.svg?branch=master
 [Git]:http://git-scm.com
 [Curl]:http://curl.haxx.se
 [Vim]:http://www.vim.org/download.php#pc
