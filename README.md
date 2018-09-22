@@ -1,5 +1,7 @@
 # islayer-vim : David Lester's Vim Distribution
 [![Build Status](https://travis-ci.com/iSlayer/islayer-vim.svg?branch=master)](https://travis-ci.com/iSlayer/islayer-vim)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![codecov](https://codecov.io/gh/iSlayer/islayer-vim/branch/master/graph/badge.svg)](https://codecov.io/gh/iSlayer/islayer-vim)
 
 islayer-vim is a distribution of vim plugins and resources for Vim and Gvim.
 
