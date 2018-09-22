@@ -411,4 +411,3 @@
         source ~/.vim/settings.vim
     endif
 " }
-
