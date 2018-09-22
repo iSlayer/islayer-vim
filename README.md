@@ -227,34 +227,16 @@ Airline provides a lightweight themable statusline with no external dependencies
 
 It also contains a very complete set of [snippets](https://github.com/spf13/snipmate-snippets) for use with snipmate or [neocomplete].
 
-## [PythonComplete]
-
-TODO: Fill in
-
-## [AutoClose]
-
-TODO: Fill in
-
-## [IndentGuides]
-
-TODO: Fill in
-
-## [Markdown]
-
-TODO: Fill in
-
-## [Preview]
-
-TODO: Fill in
-
-## TODO:
-
-* Remove tabular
+# TODO: Fill in
+* Add Plugin to README [AutoClose]
+* Add Plugin to README [IndentGuides]
+* Add Plugin to README [Markdown]
+* Add Plugin to README [PythonComplete]
+* Remove tabular plugin
 * Change devicons colors
 * Change airline icons
 * Add tagbar
 * Remove textobj-quote & sentence ?
-* Generate .sh script to create symbolic links for git local repo
 
 # Intro to VIM
 
