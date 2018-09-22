@@ -8,3 +8,4 @@ script:
   - which -a vim
   - vim --cmd version --cmd quit
   - ./install.sh
+  - bash <(curl -s https://codecov.io/bash)
