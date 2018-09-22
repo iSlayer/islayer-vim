@@ -5,8 +5,8 @@ git:
 
 install:
   - sudo apt-get update
-  - pip install --upgrade pip
   - sudo apt-get install python3.5
+  - pip install --upgrade pip
   - pip install coverage
 
 script:
