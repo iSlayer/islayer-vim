@@ -227,7 +227,7 @@ Airline provides a lightweight themable statusline with no external dependencies
 
 It also contains a very complete set of [snippets](https://github.com/spf13/snipmate-snippets) for use with snipmate or [neocomplete].
 
-# TODO: Fill in
+# TODO:
 * Add Plugin to README [AutoClose]
 * Add Plugin to README [IndentGuides]
 * Add Plugin to README [Markdown]
