@@ -3,6 +3,9 @@ sudo: false
 git:
   depth: 10
 
+install:
+  - pip install coverage
+
 script:
   - uname -a
   - which -a vim
