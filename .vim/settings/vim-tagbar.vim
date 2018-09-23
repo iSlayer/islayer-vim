@@ -7,7 +7,7 @@
 "         \ V / | | | | | | |
 "          \_/  |_|_| |_| |_|
 "
-"   This is the personal vim-indent-guides settings file of David Lester.
+"   This is the personal tagbar settings file of David Lester.
 "   While much of it is beneficial for general use, I would
 "   recommend picking out the parts you want and understand.
 "
@@ -28,14 +28,9 @@
 "   limitations under the License.
 " }
 
-" vim-indent_guides {
-    if isdirectory(expand("~/.vim/bundle/vim-indent-guides/"))
-        let g:indent_guides_enable_on_vim_startup = 0
-        let g:indent_guides_auto_colors = 1
-        " Default: 10 (10%). Values: between 0 and 100.
-        let g:indent_guides_color_change_percent = 10
-        let g:indent_guides_space_guides = 1
-        let g:indent_guides_start_level = 2
-        let g:indent_guides_guide_size = 1
-    endif
+" tagbar {
+    if count(g:bundle_groups, 'general')
+        nnoremap <silent> <leader>tt :TagbarToggle<CR>
+        let g:tagbar_autoclose = 0
+    endif 
 " }
