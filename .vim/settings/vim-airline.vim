@@ -63,9 +63,57 @@
         " Theme {
         let g:airline_theme = 'onedark' " 'dark'
         " }
+        
+        " Airline {
+        let g:airline_right_sep = '◀'
+        let g:airline_left_sep = '▶'
+        let g:airline_symbols.spell = 'Ꞩ'
+        " Tabline seperators
+        let g:airline#extensions#tabline#left_sep = '▶'
+        let g:airline#extensions#tabline#right_sep = '◀'
+
+        " unicode symbols
+        "let g:airline_left_sep = '»'
+        "let g:airline_left_sep = '▶'
+        "let g:airline_right_sep = '«'
+        "let g:airline_right_sep = '◀'
+        "let g:airline_symbols.crypt = '🔒'
+        "let g:airline_symbols.linenr = '☰'
+        "let g:airline_symbols.linenr = '␊'
+        "let g:airline_symbols.linenr = '␤'
+        "let g:airline_symbols.linenr = '¶'
+        "let g:airline_symbols.maxlinenr = ''
+        "let g:airline_symbols.maxlinenr = '㏑'
+        "let g:airline_symbols.branch = '⎇'
+        "let g:airline_symbols.paste = 'ρ'
+        "let g:airline_symbols.paste = 'Þ'
+        "let g:airline_symbols.paste = '∥'
+        "let g:airline_symbols.spell = 'Ꞩ'
+        "let g:airline_symbols.notexists = 'Ɇ'
+        "let g:airline_symbols.whitespace = 'Ξ'
+
+        "" powerline symbols
+        "let g:airline_left_sep = ''
+        "let g:airline_left_alt_sep = ''
+        "let g:airline_right_sep = ''
+        "let g:airline_right_alt_sep = ''
+        "let g:airline_symbols.branch = ''
+        "let g:airline_symbols.readonly = ''
+        "let g:airline_symbols.linenr = '☰'
+        "let g:airline_symbols.maxlinenr = ''
+
+        "" old vim-powerline symbols
+        "let g:airline_left_sep = '⮀'
+        "let g:airline_left_alt_sep = '⮁'
+        "let g:airline_right_sep = '⮂'
+        "let g:airline_right_alt_sep = '⮃'
+        "let g:airline_symbols.branch = '⭠'
+        "let g:airline_symbols.readonly = '⭤'
+        "let g:airline_symbols.linenr = '⭡'
+        " }
 
         " Tabline {
-        " Enable/disable tagbar integration
+        " Enable/disable Tabline integration
         let g:airline#extensions#tabline#enabled = 1
 
         " enable/disable displaying buffers with a single tab.
@@ -78,9 +126,6 @@
         let g:airline#extensions#tabline#show_tabs = 1
         " enable/disable displaying tab number in tabs mode.
         let g:airline#extensions#tabline#show_tab_nr = 0
-        " Tagbar seperators
-        let g:airline#extensions#tabline#left_sep = '▶'
-        let g:airline#extensions#tabline#right_sep = '◀'
 
         " configure whether close button should be shown
         let g:airline#extensions#tabline#show_close_button = 0
@@ -106,12 +151,6 @@
         nmap <leader>+ <Plug>AirlineSelectNextTab
         " }
         
-        " Airline {
-        let g:airline_right_sep = '◀'
-        let g:airline_left_sep = '▶'
-        let g:airline_symbols.spell = 'Ꞩ'
-        " }
-
         " Branch {
         let g:airline#extensions#branch#enabled = 1
         " truncate long branch names to a fixed length

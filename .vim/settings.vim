@@ -29,9 +29,27 @@
 "   limitations under the License.
 " }
 
-let vimsettings = '~/.vim/settings'
-let uname = system("uname -s")
+"let vimsettings = '~/.vim/settings'
+"let uname = system("uname -s")
+"
+"for fpath in split(globpath(vimsettings, '*.vim'), '\n')
+"    exe 'source' fpath
+"endfor
 
-for fpath in split(globpath(vimsettings, '*.vim'), '\n')
-    exe 'source' fpath
-endfor
+source ~/.vim/settings/emmet-vim.vim
+source ~/.vim/settings/neocomplete.vim
+source ~/.vim/settings/neosnippet.vim
+source ~/.vim/settings/nerdcommenter.vim
+source ~/.vim/settings/nerdtree.vim
+source ~/.vim/settings/python-mode.vim
+source ~/.vim/settings/syntastic.vim
+source ~/.vim/settings/vim-airline-themes.vim
+source ~/.vim/settings/vim-airline.vim
+source ~/.vim/settings/vim-autoclose.vim
+source ~/.vim/settings/vim-flake8.vim
+source ~/.vim/settings/vim-fugitive.vim
+source ~/.vim/settings/vim-litecorrect.vim
+source ~/.vim/settings/vim-markdown.vim
+source ~/.vim/settings/vim-nerdtree-syntax-highlight.vim
+source ~/.vim/settings/vim-tagbar.vim
+source ~/.vim/settings/vim-devicons.vim

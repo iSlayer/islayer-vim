@@ -31,6 +31,6 @@
 " tagbar {
     if count(g:bundle_groups, 'general')
         nnoremap <silent> <leader>tt :TagbarToggle<CR>
-        let g:tagbar_autoclose = 0
+        let g:tagbar_autoclose = 1
     endif 
 " }

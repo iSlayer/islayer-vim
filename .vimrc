@@ -66,12 +66,6 @@
 
 " }
 
-" Use before config if available {
-    if filereadable(expand("~/.vimrc.before"))
-        source ~/.vimrc.before
-    endif
-" }
-
 " Use Bundles config {
     if filereadable(expand("~/.vimrc.bundles"))
         source ~/.vimrc.bundles
@@ -141,17 +135,87 @@
         set showcmd                 " Show partial commands in status line and
     endif
 
-    if has('statusline')
-        set laststatus=2
+    "" Statusline modifications, added Fugitive Status Line & Syntastic Error Message {
+    "let g:last_mode = ''
+    "function! Mode()
+    "    let l:mode = mode()
 
-        " Broken down into easily includeable segments
-        set statusline=%<%f\                     " Filename
-        set statusline+=%w%h%m%r                 " Options
-        "set statusline+=%{fugitive#statusline()} " Git Hotness
-        set statusline+=\ [%{&ff}/%Y]            " Filetype
-        set statusline+=\ [%{getcwd()}]          " Current dir
-        set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
-    endif
+    "    if l:mode !=# g:last_mode
+    "        let g:last_mode = l:mode
+
+    "        hi User2 guifg=#005f00 guibg=#dfff00 gui=BOLD ctermfg=22 ctermbg=190 cterm=BOLD
+    "        hi User3 guifg=#FFFFFF guibg=#414243 ctermfg=255 ctermbg=241
+    "        hi User4 guifg=#414234 guibg=#2B2B2B ctermfg=241 ctermbg=234
+    "        hi User5 guifg=#4e4e4e guibg=#FFFFFF gui=bold ctermfg=239 ctermbg=255 cterm=bold
+    "        hi User6 guifg=#FFFFFF guibg=#8a8a8a ctermfg=255 ctermbg=245
+    "        hi User7 guifg=#ffff00 guibg=#8a8a8a gui=bold ctermfg=226 ctermbg=245 cterm=bold
+    "        hi User8 guifg=#8a8a8a guibg=#414243 ctermfg=245 ctermbg=241
+
+    "        if l:mode ==# 'n'
+    "          hi User3 guifg=#dfff00 ctermfg=190
+    "        elseif l:mode ==# "i"
+    "          hi User2 guifg=#005fff guibg=#FFFFFF ctermfg=27 ctermbg=255
+    "          hi User3 guifg=#FFFFFF ctermfg=255
+    "        elseif l:mode ==# "R"
+    "          hi User2 guifg=#FFFFFF guibg=#df0000 ctermfg=255 ctermbg=160
+    "          hi User3 guifg=#df0000 ctermfg=160
+    "        elseif l:mode ==? "v" || l:mode ==# ""
+    "          hi User2 guifg=#4e4e4e guibg=#ffaf00 ctermfg=239 ctermbg=214
+    "          hi User3 guifg=#ffaf00 ctermfg=214
+    "        endif
+    "    endif 
+
+    "    if l:mode ==# "n"
+    "      return "  NORMAL "
+    "    elseif l:mode ==# "i"
+    "      return "  INSERT "
+    "    elseif l:mode ==# "R"
+    "      return "  REPLACE "
+    "    elseif l:mode ==# "v"
+    "      return "  VISUAL "
+    "    elseif l:mode ==# "V"
+    "      return "  V·LINE "
+    "    elseif l:mode ==# ""
+    "      return "  V·BLOCK "
+    "    else
+    "      return l:mode
+    "    endif
+    "endfunction
+
+    "set statusline=%2*%{Mode()}%3*⮀%1*
+    "set statusline+=%#StatusLine#
+    "set statusline+=%{strlen(fugitive#statusline())>0?'\ ⭠\ ':''}
+    "set statusline+=%{matchstr(fugitive#statusline(),'(\\zs.*\\ze)')}
+    "set statusline+=%{strlen(fugitive#statusline())>0?'\ \ ⮁\ ':'\ '}
+    "set statusline+=%f\ %{&ro?'⭤':''}%{&mod?'+':''}%<
+    "set statusline+=%4*⮀
+    "set statusline+=%#warningmsg#
+    "set statusline+=%{SyntasticStatuslineFlag()}
+    "set statusline+=%=
+    "set statusline+=%4*⮂
+    "set statusline+=%#StatusLine#
+    "set statusline+=\ %{strlen(&fileformat)>0?&fileformat.'\ ⮃\ ':''}
+    "set statusline+=%{strlen(&fileencoding)>0?&fileencoding.'\ ⮃\ ':''}
+    "set statusline+=%{strlen(&filetype)>0?&filetype:''}
+    "set statusline+=\ %8*⮂
+    "set statusline+=%7*\ %p%%\ 
+    "set statusline+=%6*⮂%5*⭡\ \ %l:%c\ 
+    " }
+
+    "if isdirectory("~/.vim/bundle/vim-airline") {
+    ""    if has('statusline')
+    ""        set laststatus=2
+
+    ""        " Broken down into easily includeable segments
+    ""        set statusline=%<%f\                     " Filename
+    ""        set statusline+=%w%h%m%r                 " Options
+    ""        "set statusline+=%{fugitive#statusline()} " Git Hotness
+    ""        set statusline+=\ [%{&ff}/%Y]            " Filetype
+    ""        set statusline+=\ [%{getcwd()}]          " Current dir
+    ""        set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
+    ""    endif
+    ""endif
+    " }
 
     set colorcolumn=80,100          " Set color column at length 80 & 100
     set backspace=indent,eol,start  " Backspace for dummies
@@ -169,8 +233,8 @@
     set scrolljump=5                " Lines to scroll when cursor leaves screen
     set scrolloff=10                " Minimum lines to keep above and below cursor
     set foldenable                  " Auto fold code
-    set list
-    set listchars=tab:\|\           " Highlight problematic whitespace
+    set nolist
+    "set listchars=tab:\|\           " Highlight problematic whitespace
 
     set undodir=~/.vim/undodir
     set undofile
@@ -199,24 +263,17 @@
     " Remove trailing whitespaces and ^M chars
     autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,perl,sql autocmd BufWritePre <buffer> call StripTrailingWhitespace()
     autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
-    autocmd FileType haskell,puppet,ruby,yml setlocal expandtab shiftwidth=2 softtabstop=2
+    autocmd FileType haskell,puppet,ruby,yml,yaml setlocal expandtab shiftwidth=2 softtabstop=2
     autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 
     " Call Flake8 after saving python scripts
     autocmd BufWritePost *.py :call Flake8()
-
-    " Workaround vim-commentary for Haskell
-    autocmd FileType haskell setlocal commentstring=--\ %s
-    " Workaround broken colour highlighting in Haskell
-    autocmd FileType haskell,rust setlocal nospell
 
 " }
 
 " Key (re)Mappings {
 
     " The default leader is '\', many people prefer ',' as it's in a standard
-    " location. To override this behavior and set it back to '\' (or any other
-    " character) add the following to your .vimrc.before.local file:
     let mapleader = ','
 
     " Remap the <Esc> key for easier finger position to exit insert mode
@@ -265,12 +322,6 @@
         nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
         let g:vim_json_syntax_conceal = 0
     " }
-
-    " TagBar {
-        if isdirectory(expand("~/.vim/bundle/tagbar/"))
-            nnoremap <silent> <leader>tt :TagbarToggle<CR>
-        endif
-    "}
 
 " }
 
