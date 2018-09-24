@@ -35,7 +35,8 @@
         map <C-e> <plug>NERDTreeTabsToggle<CR>
         map <leader>e :NERDTreeFind<CR>
         nmap <leader>nt :NERDTreeFind<CR>
-    
+        nnoremap <silent> <leader>nt :NERDTreeToggle<CR>
+
         " Use natural sort 
         let NERDTreeNaturalSort = 1
         " Show bookmarks in window

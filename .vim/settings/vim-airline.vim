@@ -65,51 +65,39 @@
         " }
         
         " Airline {
-        let g:airline_right_sep = '◀'
-        let g:airline_left_sep = '▶'
+
+        let g:airline_mode_map = {
+            \ '__' : '-',
+            \ 'n'  : 'N',
+            \ 'i'  : 'I',
+            \ 'R'  : 'R',
+            \ 'c'  : 'C',
+            \ 'v'  : 'V',
+            \ 'V'  : 'V',
+            \ '' : 'V',
+            \ 's'  : 'S',
+            \ 'S'  : 'S',
+            \ '' : 'S',
+            \ 't'  : 'T',
+            \ }
+
+        let g:airline_right_sep = ''
+        let g:airline_right_alt_sep = '|'
+
+        let g:airline_left_sep = ''
+        let g:airline_left_alt_sep = '|'
+        
+        let g:airline_symbols.linenr = ''
         let g:airline_symbols.spell = 'Ꞩ'
+        let g:airline_symbols.whitespace = ''
+        let g:airline_symbols.crypt = '🔒'
+
         " Tabline seperators
-        let g:airline#extensions#tabline#left_sep = '▶'
-        let g:airline#extensions#tabline#right_sep = '◀'
+        let g:airline#extensions#tabline#left_sep = ''
+        let g:airline#extensions#tabline#left_alt_sep = ''
+        let g:airline#extensions#tabline#right_sep = ''
+        let g:airline#extensions#tabline#right_alt_sep = ''
 
-        " unicode symbols
-        "let g:airline_left_sep = '»'
-        "let g:airline_left_sep = '▶'
-        "let g:airline_right_sep = '«'
-        "let g:airline_right_sep = '◀'
-        "let g:airline_symbols.crypt = '🔒'
-        "let g:airline_symbols.linenr = '☰'
-        "let g:airline_symbols.linenr = '␊'
-        "let g:airline_symbols.linenr = '␤'
-        "let g:airline_symbols.linenr = '¶'
-        "let g:airline_symbols.maxlinenr = ''
-        "let g:airline_symbols.maxlinenr = '㏑'
-        "let g:airline_symbols.branch = '⎇'
-        "let g:airline_symbols.paste = 'ρ'
-        "let g:airline_symbols.paste = 'Þ'
-        "let g:airline_symbols.paste = '∥'
-        "let g:airline_symbols.spell = 'Ꞩ'
-        "let g:airline_symbols.notexists = 'Ɇ'
-        "let g:airline_symbols.whitespace = 'Ξ'
-
-        "" powerline symbols
-        "let g:airline_left_sep = ''
-        "let g:airline_left_alt_sep = ''
-        "let g:airline_right_sep = ''
-        "let g:airline_right_alt_sep = ''
-        "let g:airline_symbols.branch = ''
-        "let g:airline_symbols.readonly = ''
-        "let g:airline_symbols.linenr = '☰'
-        "let g:airline_symbols.maxlinenr = ''
-
-        "" old vim-powerline symbols
-        "let g:airline_left_sep = '⮀'
-        "let g:airline_left_alt_sep = '⮁'
-        "let g:airline_right_sep = '⮂'
-        "let g:airline_right_alt_sep = '⮃'
-        "let g:airline_symbols.branch = '⭠'
-        "let g:airline_symbols.readonly = '⭤'
-        "let g:airline_symbols.linenr = '⭡'
         " }
 
         " Tabline {

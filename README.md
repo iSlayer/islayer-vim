@@ -308,7 +308,6 @@ one level).
 
 # TODO:
 * Change devicons colors
-* Change airline icons
 
 # Intro to VIM
 

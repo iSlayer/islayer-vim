@@ -28,7 +28,8 @@
 
 " vim-devicons {
     if count(g:bundle_groups, 'misc')
-        set guifont=Droid\ Sans\ Mono\ Nerd\ Font\ Complete
+        " set guifont=Droid\ Sans\ Mono\ Nerd\ Font\ Complete
+        set guifont=Hack\ Nerd\ Font\ Mono\ Regular
 
         let g:webdevicons_enable_airline_tabline = 1
         let g:webdevicons_enable_airline_statusline = 1
@@ -37,5 +38,9 @@
         let g:airline_powerline_fonts = 1
         let g:DevIconsEnableFoldersOpenClose = 1
         let g:DevIconsEnableFolderExtensionPatternMatching = 1
+
+        if exists('g:loaded_webdevicons')
+            call webdevicons#refresh()
+        endif
     endif 
 " }

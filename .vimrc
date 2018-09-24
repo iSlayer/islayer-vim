@@ -6,7 +6,7 @@
 "        \ \ / /| | '_ ` _ \
 "         \ V / | | | | | | |
 "          \_/  |_|_| |_| |_|
-"        
+"
 "
 "   This is the personal .vimrc file of David Lester.
 "   While much of it is beneficial for general use, I would
@@ -28,7 +28,7 @@
 "   See the License for the specific language governing permissions and
 "   limitations under the License.
 " }
-
+    
 " Environment {
 
     " Identify platform {
@@ -57,7 +57,7 @@
           set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
         endif
     " }
-    
+
     " Arrow Key Fix {
         if &term[:4] == "xterm" || &term[:5] == 'screen' || &term[:3] == 'rxvt'
             inoremap <silent> <C-[>OC <RIGHT>
@@ -163,7 +163,7 @@
     "          hi User2 guifg=#4e4e4e guibg=#ffaf00 ctermfg=239 ctermbg=214
     "          hi User3 guifg=#ffaf00 ctermfg=214
     "        endif
-    "    endif 
+    "    endif
 
     "    if l:mode ==# "n"
     "      return "  NORMAL "
@@ -198,8 +198,8 @@
     "set statusline+=%{strlen(&fileencoding)>0?&fileencoding.'\ ⮃\ ':''}
     "set statusline+=%{strlen(&filetype)>0?&filetype:''}
     "set statusline+=\ %8*⮂
-    "set statusline+=%7*\ %p%%\ 
-    "set statusline+=%6*⮂%5*⭡\ \ %l:%c\ 
+    "set statusline+=%7*\ %p%%\
+    "set statusline+=%6*⮂%5*⭡\ \ %l:%c\
     " }
 
     "if isdirectory("~/.vim/bundle/vim-airline") {
@@ -434,13 +434,13 @@
     command! -complete=file -nargs=+ Shell call s:RunShellCommand(<q-args>)
     " e.g. Grep current file for <search_term>: Shell grep -Hn <search_term> %
     " }
-     
+
     " Expand Filename and execute {
     function! s:ExpandFilenameAndExecute(command, file)
         execute a:command . " " . expand(a:file, ":p")
     endfunction
     " }
-     
+
 " }
 
 " Use local vimrc if available {
