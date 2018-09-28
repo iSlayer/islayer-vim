@@ -1,5 +1,5 @@
 " Modeline and Notes {
-" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker spell:
+" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker nospell:
 "
 "                _
 "        __   __(_)_ __ ___
@@ -88,7 +88,7 @@
     set viewoptions=folds,options,cursor,unix,slash " Better unix/win compat
     set virtualedit=onemore     " Allow for cursor beyond last character
     set history=1000            " Store a ton of history (default is 20)
-    set spell                   " Spell checking on
+    set nospell                   " Spell checking on
     set hidden                  " Allow buffer switching without saving
     set autoread                " Reload files changed outside vim
 
@@ -261,13 +261,13 @@
     set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
 
     " Remove trailing whitespaces and ^M chars
-    autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,perl,sql autocmd BufWritePre <buffer> call StripTrailingWhitespace()
-    autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
+    " autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,perl,sql autocmd BufWritePre <buffer> call StripTrailingWhitespace()
+    " autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
     autocmd FileType haskell,puppet,ruby,yml,yaml setlocal expandtab shiftwidth=2 softtabstop=2
-    autocmd BufNewFile,BufRead *.coffee set filetype=coffee
+    " autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 
     " Call Flake8 after saving python scripts
-    autocmd BufWritePost *.py :call Flake8()
+    " autocmd BufWritePost *.py :call Flake8()
 
 " }
 
