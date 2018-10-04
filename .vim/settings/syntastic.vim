@@ -31,10 +31,11 @@
 " syntastic {
     if count(g:bundle_groups, 'programming')
         " Aggregates errors by all checkers, else grabs 1st one
-        let g:syntastic_aggregate_errors = 0
-        let g:syntastic_mode_map = {
-            \ "mode": "passive",
-            \ "active_filetypes": [],
-            \ "passive_filetypes": [] }
+        let g:syntastic_python_checkers = ['flake8', 'python']
+        " let g:syntastic_aggregate_errors = 0
+        "let g:syntastic_mode_map = {
+        "    \ "mode": "passive",
+        "    \ "active_filetypes": [],
+        "    \ "passive_filetypes": [] }
     endif 
 " }

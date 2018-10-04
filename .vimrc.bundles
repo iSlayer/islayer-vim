@@ -138,7 +138,7 @@
     " Python {
         if count(g:bundle_groups, 'python')
             " Pick either python-mode or pyflakes & pydoc
-            Bundle 'klen/python-mode'
+            "Bundle 'klen/python-mode'
             Bundle 'yssource/python.vim'
             Bundle 'pythoncomplete'
             Bundle 'nvie/vim-flake8'

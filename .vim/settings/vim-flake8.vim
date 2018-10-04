@@ -32,5 +32,6 @@
     if count(g:bundle_groups, 'python')
         " Flake8 instuction settings http://flake8.pycqa.org/en/latest/
         let g:flake8_show_in_file= 0  " show
+        "let g:flake8_cmd = "/usr/bin/flake8"
     endif 
 " }
