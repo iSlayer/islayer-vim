@@ -239,26 +239,6 @@ This is the pythoncomplete omni-completion script shipped with vim 7. Features:
 * completeopt=preview support, displaying python docstrings
 * Function argument completion
 
-## [PythonMode]
-
-Python-mode is a Vim plugin that magically converts Vim into a Python IDE. Features:
-
-* Support Python version 2.6+ and 3.2+
-* Syntax highlighting
-* Virtualenv support
-* Run python code (`<leader>r`)
-* Add/remove breakpoints (`<leader>b`)
-* Improved Python indentation
-* Python motions and operators (`]]`, `3[[`, `]]M`, `vaC`, `viM`, `daC`, `ciM`, ...)
-* Improved Python folding
-* Run multiple code checkers simultaneously (`:PymodeLint`)
-* Autofix PEP8 errors (`:PymodeLintAuto`)
-* Search in python documentation (`<leader>K`)
-* Code refactoring
-* Intellisense code-completion
-* Go to definition (`<C-c>g`)
-* And more, more ...
-
 ## [Python]
 
 This plugin can be useful when editing Python scripts. Features:
@@ -355,7 +335,6 @@ Here's some tips if you've never used VIM before:
 [Onedark]:https://github.com/joshdick/onedark.vim
 [Python]:https://github.com/yssource/python.vim
 [PythonComplete]:https://github.com/vim-scripts/pythoncomplete
-[PythonMode]:https://github.com/python-mode/python-mode
 [Preview]:https://github.com/spf13/vim-preview
 [Snippets]:https://github.com/honza/vim-snippets
 [Syntastic]:https://github.com/scrooloose/syntastic
