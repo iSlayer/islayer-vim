@@ -23,7 +23,3 @@ script:
   - which -a vim
   - vim --cmd version --cmd quit
   - ./install.sh
-
-after_success:
-  - codecov
-  - bash <(curl -s https://codecov.io/bash)
