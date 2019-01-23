@@ -142,6 +142,7 @@
             Bundle 'yssource/python.vim'
             Bundle 'pythoncomplete'
             Bundle 'nvie/vim-flake8'
+            Bundle 'ambv/black'
         endif
     " }
 

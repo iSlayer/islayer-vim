@@ -28,7 +28,7 @@
 "   See the License for the specific language governing permissions and
 "   limitations under the License.
 " }
-    
+
 " Environment {
 
     " Identify platform {
@@ -231,7 +231,7 @@
     set smartindent                 " Set tab standard smart
     set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
     set scrolljump=5                " Lines to scroll when cursor leaves screen
-    set scrolloff=10                " Minimum lines to keep above and below cursor
+    "set scrolloff=10                " Minimum lines to keep above and below cursor
     set foldenable                  " Auto fold code
     set nolist
     "set listchars=tab:\|\           " Highlight problematic whitespace
@@ -264,6 +264,7 @@
     " autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,perl,sql autocmd BufWritePre <buffer> call StripTrailingWhitespace()
     " autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
     autocmd FileType haskell,puppet,ruby,yml,yaml setlocal expandtab shiftwidth=2 softtabstop=2
+    " autocmd BufWritePre *.py execute ':Black'
     " autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 
     " Call Flake8 after saving python scripts
@@ -330,7 +331,8 @@
     " GVIM- (here instead of .gvimrc)
     if has('gui_running')
         set guioptions-=T           " Remove the toolbar
-        set lines=40                " 40 lines of text instead of 24
+        set lines=53                " 53 lines of text instead of 24
+        set columns=104             " 104 columns of text
         if LINUX() && has("gui_running")
             set guifont=Andale\ Mono\ Regular\ 12,Menlo\ Regular\ 11,Consolas\ Regular\ 12,Courier\ New\ Regular\ 14
         elseif OSX() && has("gui_running")
