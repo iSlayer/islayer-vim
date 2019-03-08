@@ -286,6 +286,9 @@
     map <C-l> <C-w>l
     map <C-h> <C-w>h
 
+    " Remap to bring up list of tags
+    map <C-]> g<C-]>
+
     " Code folding options
     nmap <leader>f0 :set foldlevel=0<CR>
     nmap <leader>f1 :set foldlevel=1<CR>
