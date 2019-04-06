@@ -119,6 +119,7 @@
     " General Programming {
         if count(g:bundle_groups, 'programming')
             " Pick one of the checksyntax, jslint, or syntastic
+            Bundle 'Valloric/YouCompleteMe'
             Bundle 'scrooloose/syntastic'
             Bundle 'tpope/vim-fugitive'
             Bundle 'scrooloose/nerdcommenter'
@@ -142,7 +143,7 @@
             Bundle 'yssource/python.vim'
             Bundle 'pythoncomplete'
             Bundle 'nvie/vim-flake8'
-            Bundle 'ambv/black'
+            "Bundle 'ambv/black'
         endif
     " }
 

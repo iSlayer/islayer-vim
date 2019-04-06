@@ -280,6 +280,9 @@
     " Remap the <Esc> key for easier finger position to exit insert mode
     imap jj <Esc>
 
+    " Yank and paste but keep previous yank for multiple pastes
+    xnoremap p pgvy
+
     " Easier moving in tabs and windows
     map <C-j> <C-w>j
     map <C-k> <C-w>k

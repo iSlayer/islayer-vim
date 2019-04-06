@@ -6,9 +6,8 @@
 "        \ \ / /| | '_ ` _ \
 "         \ V / | | | | | | |
 "          \_/  |_|_| |_| |_|
-"        
 "
-"   This is the personal settings.vim file of David Lester.
+"   This is the personal python-mode settings file of David Lester.
 "   While much of it is beneficial for general use, I would
 "   recommend picking out the parts you want and understand.
 "
@@ -29,28 +28,9 @@
 "   limitations under the License.
 " }
 
-"let vimsettings = '~/.vim/settings'
-"let uname = system("uname -s")
-"
-"for fpath in split(globpath(vimsettings, '*.vim'), '\n')
-"    exe 'source' fpath
-"endfor
-
-source ~/.vim/settings/emmet-vim.vim
-source ~/.vim/settings/neocomplete.vim
-source ~/.vim/settings/neosnippet.vim
-source ~/.vim/settings/nerdcommenter.vim
-source ~/.vim/settings/nerdtree.vim
-source ~/.vim/settings/python-mode.vim
-source ~/.vim/settings/syntastic.vim
-source ~/.vim/settings/vim-airline-themes.vim
-source ~/.vim/settings/vim-airline.vim
-source ~/.vim/settings/vim-autoclose.vim
-source ~/.vim/settings/vim-flake8.vim
-source ~/.vim/settings/vim-fugitive.vim
-source ~/.vim/settings/vim-litecorrect.vim
-source ~/.vim/settings/vim-markdown.vim
-source ~/.vim/settings/vim-nerdtree-syntax-highlight.vim
-source ~/.vim/settings/vim-tagbar.vim
-source ~/.vim/settings/vim-devicons.vim
-source ~/.vim/settings/YouCompleteMe.vim
+" programming {
+    if isdirectory(expand("~/.vim/bundle/YouCompleteMe"))
+        " Global configuration path to ycm file
+        let g:ycm_global_ycm_extra_conf = "~/.vim/settings/ycm_extra_conf.py"
+    endif
+" }
