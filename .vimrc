@@ -83,7 +83,7 @@
     scriptencoding utf-8        " Encoding scheme to use
 
     " Always switch to the current file directory
-    autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | lcd %:p:h | endif
+    " autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | lcd %:p:h | endif
 
     set viewoptions=folds,options,cursor,unix,slash " Better unix/win compat
     set virtualedit=onemore     " Allow for cursor beyond last character
@@ -217,6 +217,7 @@
     ""endif
     " }
 
+    set path+=**                    " Recursively search for file use :find <name>
     set colorcolumn=80,100          " Set color column at length 80 & 100
     set backspace=indent,eol,start  " Backspace for dummies
     set linespace=0                 " No extra spaces between rows
