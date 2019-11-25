@@ -31,6 +31,7 @@
 " programming {
     if isdirectory(expand("~/.vim/bundle/YouCompleteMe"))
         " Global configuration path to ycm file
+        let $PYTHONPATH = "C:\\Python37\\Lib;C:\\Python37\\DLLs"
         let g:ycm_global_ycm_extra_conf = "~/.vim/settings/ycm_extra_conf.py"
     endif
 " }

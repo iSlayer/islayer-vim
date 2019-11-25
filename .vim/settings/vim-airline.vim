@@ -1,5 +1,5 @@
 " Modeline and Notes {
-" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker spell:
+" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker nospell:
 "
 "                _
 "        __   __(_)_ __ ___
@@ -103,6 +103,7 @@
         " Tabline {
         " Enable/disable Tabline integration
         let g:airline#extensions#tabline#enabled = 1
+        let g:airline#extensions#tagbar#enabled = 0
 
         " enable/disable displaying buffers with a single tab.
         let g:airline#extensions#tabline#show_buffers = 0

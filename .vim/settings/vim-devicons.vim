@@ -28,8 +28,8 @@
 
 " vim-devicons {
     if count(g:bundle_groups, 'misc')
-        " set guifont=Droid\ Sans\ Mono\ Nerd\ Font\ Complete
-        set guifont=Hack\ Nerd\ Font\ Mono\ Regular
+        "set guifont=Hack\ Regular:h12
+        set guifont=Source_Code_Pro:h12:cANSI:qDRAFT
 
         let g:webdevicons_enable_airline_tabline = 1
         let g:webdevicons_enable_airline_statusline = 1

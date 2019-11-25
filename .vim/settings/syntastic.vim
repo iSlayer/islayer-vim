@@ -37,5 +37,56 @@
         "    \ "mode": "passive",
         "    \ "active_filetypes": [],
         "    \ "passive_filetypes": [] }
+
+        "let g:syntastic-c-cppcheck=1
+        "let g:syntastic_c_checkers = ['Cppcheck']
+        "let g:syntastic_cpp_checkers = ['Cppcheck']
+    " if exists('g:loaded_syntastic_c_cppcheck_checker')
+    "     finish
+    " endif
+    "let g:loaded_syntastic_c_cppcheck_checker = 1
+    " 
+    " let s:save_cpo = &cpo
+    " set cpo&vim
+    " 
+    " function! SyntaxCheckers_c_cppcheck_GetLocList() dict
+    "     let buf = bufnr('')
+    " 
+    "     let makeprg = self.makeprgBuild({
+    "         \ 'args': syntastic#c#ReadConfig(syntastic#util#bufVar(buf, 'cppcheck_config_file')),
+    "         \ 'args_after': '-q --enable=style' })
+    " 
+    "     let errorformat =
+    "         \ '[%f:%l]: (%trror) %m,' .
+    "         \ '[%f:%l]: (%tarning) %m,' .
+    "         \ '[%f:%l]: (%ttyle) %m,' .
+    "         \ '[%f:%l]: (%terformance) %m,' .
+    "         \ '[%f:%l]: (%tortability) %m,' .
+    "         \ '[%f:%l]: (%tnformation) %m,' .
+    "         \ '[%f:%l]: (%tnconclusive) %m,' .
+    "         \ '%-G%.%#'
+    " 
+    "     let loclist = SyntasticMake({
+    "         \ 'makeprg': makeprg,
+    "         \ 'errorformat': errorformat,
+    "         \ 'preprocess': 'cppcheck',
+    "         \ 'returns': [0] })
+    " 
+    "     for e in loclist
+    "         if e['type'] =~? '\m^[SPI]'
+    "             let e['type'] = 'w'
+    "             let e['subtype'] = 'Style'
+    "         endif
+    "     endfor
+    " 
+    "     return loclist
+    " endfunction
+    " 
+    " call g:SyntasticRegistry.CreateAndRegisterChecker({
+    "     \ 'filetype': 'c',
+    "     \ 'name': 'Cppcheck'})
+    " 
+    " let &cpo = s:save_cpo
+    " unlet s:save_cpo
     endif 
 " }

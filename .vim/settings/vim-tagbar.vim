@@ -1,5 +1,5 @@
 " Modeline and Notes {
-" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker spell:
+" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker nospell:
 "
 "                _
 "        __   __(_)_ __ ___
@@ -31,6 +31,7 @@
 " tagbar {
     if count(g:bundle_groups, 'general')
         nnoremap <silent> <leader>tt :TagbarToggle<CR>
+        let g:tagbar_ctags_bin = 'C:\Program Files\ctags\ctags.exe'
         let g:tagbar_autoclose = 1
     endif 
 " }
