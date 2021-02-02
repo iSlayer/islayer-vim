@@ -142,7 +142,7 @@
         " Branch {
         let g:airline#extensions#branch#enabled = 1
         " truncate long branch names to a fixed length
-        let g:airline#extensions#branch#displayed_head_limit = 10
+        let g:airline#extensions#branch#displayed_head_limit = 16
         " change the text for when no branch is detected
         let g:airline#extensions#branch#empty_message = ''
         " to truncate all path sections but the last one, e.g. a branch
