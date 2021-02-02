@@ -32,5 +32,6 @@
     if isdirectory(expand("~/.vim/bundle/YouCompleteMe"))
         " Global configuration path to ycm file
         let g:ycm_global_ycm_extra_conf = "~/.vim/settings/ycm_extra_conf.py"
+        let g:ycm_confirm_extra_conf = 0
     endif
 " }

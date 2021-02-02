@@ -107,6 +107,7 @@
             Bundle 'majutsushi/tagbar'
             " Bundle 'vim-scripts/restore_view.vim'
             " Bundle 'gcmt/wildfire.vim'
+            Bundle 'ludovicchabant/vim-gutentags'
         endif
     " }
 

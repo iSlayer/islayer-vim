@@ -236,6 +236,8 @@
     set foldenable                  " Auto fold code
     set nolist
     "set listchars=tab:\|\           " Highlight problematic whitespace
+    autocmd VimEnter * set t_ut=~/.vimrc
+    let &t_ut=''
 
     set undodir=~/.vim/undodir
     set undofile
@@ -283,6 +285,9 @@
 
     " Yank and paste but keep previous yank for multiple pastes
     xnoremap p pgvy
+
+    " Change to working directory of current file for only current vim buffer
+    nnoremap <leader>cd :lcd %:p:h<CR>
 
     " Easier moving in tabs and windows
     map <C-j> <C-w>j
@@ -338,8 +343,8 @@
     " GVIM- (here instead of .gvimrc)
     if has('gui_running')
         set guioptions-=T           " Remove the toolbar
-        set lines=53                " 53 lines of text instead of 24
-        set columns=104             " 104 columns of text
+        set lines=30                " 53 lines of text instead of 24
+        set columns=95             " 104 columns of text
         if LINUX() && has("gui_running")
             set guifont=Andale\ Mono\ Regular\ 12,Menlo\ Regular\ 11,Consolas\ Regular\ 12,Courier\ New\ Regular\ 14
         elseif OSX() && has("gui_running")
